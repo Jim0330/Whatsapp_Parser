@@ -116,9 +116,4 @@ Figure 2: Extracted details stored automatically in Google Sheets
 
 ---
 
-## Author
-**Ashitha P**  
-Email: [pallathashitha@gmail.com](mailto:pallathashitha@gmail.com)  
-Developed as part of an intelligent automation workflow using NLP, Flask, Twilio, and Google Cloud APIs.  
-````
 
