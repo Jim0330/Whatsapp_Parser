@@ -39,7 +39,7 @@ It integrates Twilio’s WhatsApp API and Google APIs to handle end-to-end autom
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/whatsapp_resume_parser.git
+git clone https://github.com/ashithapallath/Whatsapp_Parser.git
 cd whatsapp_resume_parser
 ```
 
