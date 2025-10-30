@@ -31,11 +31,10 @@ HEADING_WORDS = {"resume", "curriculum", "vitae", "professional", "summary", "ob
 def extract_phone_numbers(text):
     """Use Google's phonenumbers library to extract valid mobile numbers."""
     numbers = []
-    for match in phonenumbers.PhoneNumberMatcher(text, "IN"):  # 'IN' = India default
+    for match in phonenumbers.PhoneNumberMatcher(text, "IN"): 
         num = phonenumbers.format_number(match.number, phonenumbers.PhoneNumberFormat.E164)
         numbers.append(num)
-    return list(set(numbers))  # remove duplicates
-
+    return list(set(numbers))  
 
 def extract_basic(text):
     """Extract full name, email, and phone robustly."""
